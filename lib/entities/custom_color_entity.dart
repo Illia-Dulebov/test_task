@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test_task/entities/colors_enum.dart';
+import 'package:test_task/entities/colorsRGB_enum.dart';
 import 'package:test_task/utility/random_int_generator.dart';
 
 /// Custom color entity with opacity
