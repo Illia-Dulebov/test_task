@@ -3,7 +3,7 @@ import 'package:test_task/color_changing_page/main_text.dart';
 
 /// Opacity value slider
 class OpacitySlider extends StatefulWidget {
-  ///Callback for the color change with the certain opacity
+  /// Callback for the color change with the certain opacity
   final Function(double?) onSliderOpacityValueColorChange;
 
   /// Opacity slider constructor

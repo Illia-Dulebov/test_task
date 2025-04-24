@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 /// Text widget with certain font style
 class MainText extends StatelessWidget {
-  ///String content of the widget
+  /// String content of the widget
   final String text;
 
   /// Main text constructor with required value field
