@@ -1,5 +1,5 @@
 /// RGB Colors entity
-enum ColorsRGB {
+enum ColorsRgb {
   /// Red color
   red,
   /// Green color

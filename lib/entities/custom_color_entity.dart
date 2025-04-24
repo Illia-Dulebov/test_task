@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test_task/entities/colorsRGB_enum.dart';
+import 'package:test_task/entities/colors_rgb.dart';
 import 'package:test_task/utility/random_int_generator.dart';
 
 /// Custom color entity with opacity
@@ -15,16 +15,16 @@ class CustomColorEntity {
 
   /// Custom color generator method
   void generateAndSetRandomColor({double opacity = 1}) {
-    final Map<ColorsRGB, int> randomColorsRGB = Map.unmodifiable({
-      ColorsRGB.red: randomIntFromLimit(),
-      ColorsRGB.green: randomIntFromLimit(),
-      ColorsRGB.blue: randomIntFromLimit(),
+    final Map<ColorsRgb, int> randomColorsRGB = Map.unmodifiable({
+      ColorsRgb.red: randomIntFromLimit(),
+      ColorsRgb.green: randomIntFromLimit(),
+      ColorsRgb.blue: randomIntFromLimit(),
     });
 
     color = Color.fromRGBO(
-      randomColorsRGB[ColorsRGB.red] ?? 0,
-      randomColorsRGB[ColorsRGB.green] ?? 0,
-      randomColorsRGB[ColorsRGB.blue] ?? 0,
+      randomColorsRGB[ColorsRgb.red] ?? 0,
+      randomColorsRGB[ColorsRgb.green] ?? 0,
+      randomColorsRGB[ColorsRgb.blue] ?? 0,
       opacity,
     );
   }
